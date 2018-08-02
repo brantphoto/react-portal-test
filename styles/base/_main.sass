@@ -1,0 +1,80 @@
+@charset "UTF-8"
+
+@mixin transition($in)
+
+html,
+body,
+.container,
+#app,
+.routes,
+.app
+  height: 100%
+  width: 100%
+  font-family: Lato
+
+body
+  background: #F3F3F3
+
+.app
+  display: flex
+  flex-direction: column
+
+.nav-bar,
+.billboard
+  padding: 0 15px
+
+.nav-bar
+  background-image: linear-gradient(90deg, #C9A685 0%, #B99473 26%, #8B6041 100%)
+  height: 43px
+  color: #FFF9F5
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+
+.main-content
+  height: inherit
+  overflow-y: scroll
+
+.billboard
+  color: #FFF9F5
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 220px
+  background-image: linear-gradient(-1deg, #0E2536 0%, #73A3CF 100%)
+
+.row
+  padding: 15px
+
+.card
+  padding: 15px
+  background: #FFFDFD;
+  box-shadow: 0 2px 4px 0 rgba(190,174,174,0.30)
+  border-radius: 3px
+
+.rule-card
+  padding: 15px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin: 15px 0
+  cursor: pointer
+  transition: background-color .3s
+
+  &:hover
+    background-color: lighten(#73A3CF, 30%)
+
+  input,
+  span,
+  label,
+  a,
+    padding: 0 10px
+
+a
+  text-decoration: none
+  color: #73A3CF
+
+  &:hover
+    text-decoration: underline
